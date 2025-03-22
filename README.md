@@ -3,8 +3,17 @@
 DevZap is an AI-powered CLI tool for DevOps, offering error analysis, tool installation, and log monitoring with optional automation. Powered by OpenRouter's API.
 
 ## Setup
-1. Install: `pip install -r requirements.txt`
-2. Run: `python src/devzap.py setup` or set `DEVZAP_API_KEY` env var
+## Prerequisites
+- Python 3.8+
+- `python3-venv` (for virtual environments): `apt install python3-venv`
+
+## Setup
+1. **Create a Virtual Environment:**
+   ```bash
+   python3 -m venv devzap-venv
+   source devzap-venv/bin/activate
+2. Install: `pip install -r requirements.txt`
+3. Run: `python src/devzap.py setup` or set `DEVZAP_API_KEY` env var
 
 ## Usage
 - Analyze error: `python src/devzap.py analyze --file error.log [--auto]`
